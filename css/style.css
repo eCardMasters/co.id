@@ -1,0 +1,334 @@
+/*!HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/*/
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0
+}
+
+textarea {
+  resize: vertical
+}
+
+.hidden,
+[hidden] {
+  display: none !important
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px
+}
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto
+}
+
+.invisible {
+  visibility: hidden
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table
+}
+
+.clearfix::after {
+  clear: both
+}
+
+@media only screen and (min-width:35em) {}
+
+@media print,
+(-webkit-min-device-pixel-ratio:1.25),
+(min-resolution:1.25dppx),
+(min-resolution:120dpi) {}
+
+@media print {
+
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")"
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")"
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: ""
+  }
+
+  pre {
+    white-space: pre-wrap !important
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid
+  }
+
+  thead {
+    display: table-header-group
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid
+  }
+}
+
+#video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  filter: blur(50px);
+  z-index: -1000
+}
+
+@media(min-width:0px) {
+  .btn {
+    height: 50px
+  }
+
+  .logo {
+    width: 320px;
+    height: 356px
+  }
+
+  .container {
+    width: 100% !important
+  }
+}
+
+@media(min-width:425px) {
+  .logo {
+    width: 100%;
+    height: 356px
+  }
+}
+
+@media(min-width:768px) {
+  .logo {
+    width: 390px;
+    height: 356px
+  }
+
+  .container {
+    width: 50% !important
+  }
+
+  .btn {
+    height: 40px
+  }
+}
+
+@media(min-width:1024px) {
+  .container {
+    width: 30% !important
+  }
+}
+
+body {
+  background-color: #000 !important;
+  font-family: Inter, sans-serif !important
+}
+
+.btn-secondary:hover {
+  background-color: #342424 !important;
+  transition: ease-in, .2s;
+  border-color: #342424 !important
+}
+
+.btn-secondary {
+  transition: ease-in, .2s;
+  background-color: #130d0d !important;
+  border-color: #130d0d !important
+}
+
+.btn-success:hover {
+  background-color: #47b984 !important;
+  transition: ease-in, .2s;
+  border-color: #47b984 !important
+}
+
+.btn-success {
+  transition: ease-in, .2s;
+  background-color: #278a4e !important;
+  border-color: #278a4e !important
+}
+
+.btn-primary:hover {
+  background-color: #5497f9 !important;
+  transition: ease-in, .2s;
+  border-color: #5497f9 !important
+}
+
+.btn-primary {
+  transition: ease-in, .2s;
+  background-color: #5865f2 !important;
+  border-color: #5865f2 !important
+}
+
+a {
+  text-decoration: none;
+  color: #fff
+}
+
+.btn__discord {
+  background-color: #130D0D
+}
+
+.btn__youtube {
+  background-color: #130D0D;
+}
+
+.btn__instagram {
+  background-color: #130D0D;
+}
+
+.btn__donation {
+  background-color: #130D0D;
+}
+
+.btn__forum {
+  width: 95%
+}
+
+.btn__trivia {
+  width: 95%;
+  margin-right: 5px
+}
+
+.buttons {
+  margin-top: 50px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.btn {
+  width: 100%;
+  margin-bottom: 5px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px
+}
+
+.btns__forums {
+  width: 100%;
+  display: flex;
+  flex-direction: row
+}
+
+.btns__socmed {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 48px !important
+}
+
+.content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+}
+
+img.logo {
+  height: 24px !important;
+  width: 24px !important;
+  margin-right: 10px !important;
+}
+
+img.logo-no-margin {
+  height: 56px !important;
+  width: 56px !important;
+  }
